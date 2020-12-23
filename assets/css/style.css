@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Supermercado+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  
+  background: url("../images/background.jpg");
+}
+
+.page-title {
+  color: #FF6D00;
+  font-family: Langar, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.game-info {
+  font-family: Supermercado, serif;
+  color: #FFBB89;
+  font-size: 4em;
+}
+
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  
+}
+
+.card{
+    position: relative;
+    background-color:black;
+    height: 170px;
+    width: 125px;
+}
+
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ghg {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+ 
+}
+
+.ghg-topLeft-carbondioxide{
+  transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+
+.ghg-topRight-N2O{
+  transform: rotate(-260deg);
+  top: 0;
+  right: 0;
+}
+
+.ghg-bottomLeft-cfc{
+  
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.ghg-bottomRight-methane{
+  
+  bottom: 0;
+  right: 0;
+}
