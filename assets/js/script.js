@@ -1,23 +1,11 @@
-/* class AudioController {
 
-    constructor() {
-        this.bgSounds = document.getElementById('bgMusic');
-		this.flipSounds = document.getElementById('flipSound');
-        this.matchSounds = document.getElementById('matchSound');
-        this.unmatchSounds = document.getElementById('unmatchedSound');
-		this.victorySounds = document.getElementById('victorySound');
-        this.gameOverSounds = document.getElementById('gameOverSound');
-        this.bgSounds.volume = 0.5;
-        this.bgSounds.loop = true;
-    }
- */
     class AudioController {
     constructor() {
-        this.bgSounds = new Audio('assets/audio/bgMusic.mp3');
-        this.flipSounds = new Audio('assets/audio/flipCardSound.mp3');
-        this.matchSounds = new Audio('assets/audio/matchedSound.mp3');
-        this.victorySounds = new Audio('Assets/Audio/assets/audio/victorySound.mp3');
-        this.gameOverSounds = new Audio('Assets/Audio/assets/audio/gameOverSound.mp3');
+        this.bgSounds = new Audio('assets/Audio/bgMusic.mp3');
+        this.flipSounds = new Audio('assets/Audio/flipCardSound.mp3');
+        this.matchSounds = new Audio('assets/Audio/matchedSound.mp3');
+        this.victorySounds = new Audio('assets/Audio/victorySound.mp3');
+        this.gameOverSounds = new Audio('assets/Audio/gameOverSound.mp3');
         this.bgSounds.volume = 0.5;
         this.bgSounds.loop = true;
     }
