@@ -139,7 +139,7 @@ animation: dance 1s linear infinite 500ms;
 }
 
 .card-front {
-  background-color: #FFBB89;
+  background-color: whitesmoke;
   border-color: #333;
   transform: rotateY(180deg);
 }
@@ -192,13 +192,25 @@ animation: dance 1s linear infinite 500ms;
   right: 0;
 }
 
+ .card-front .eden {
+  transform: rotate(0deg);
+  top: 0;
+  left: 0;
+} 
 
+
+.card-front .edenz{
+
+transform: rotate(360deg);
+  top: 0;
+  right: 0;
+}
 
 .bonny,
 .win-match {
 position: absolute;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   
 }
 
