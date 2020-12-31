@@ -3,314 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" /> 
-    <script src="assets/js/script.js" async></script>   
-    <title>Climate Change Memory Game</title> 
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Hover css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
+    <!--My Style Sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Climate Change Memory Game</title>
 </head>
+
 <body>
-    <h1 class="page-title">Climate Change Memory Game</h1>
-    <div class="overlay-text visible">
-        Click to Start
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="index.html" class="navbar-brand hvr-grow-shadow">CCMG</a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-center naveLinks mr-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link hvr-grow-shadow" href="#"><span>Welcome</span></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link hvr-grow-shadow" href="#climateChangeGame" data-toggle="modal" data-target="#staticBackdrop1"><i class="fas fa-play fa-lg"></i><span>Play Game</span></a></li>
+                    
+                    <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-md-block">
+                <p class="navbar-text my-auto mr-2"><i>More Subliminal Games!</i></p>
+                <a href="/login" class="btn btn--cta btn-lg btn--red hvr-grow-shadow" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+                
+            </div>
+        </nav>
+
+        <!-----------------------------------------MAINPAGE-------------------------------------------------------------->
+
+<div class="fluid welcome-page">
+     <div class="opaque-overlay">&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+            <section class="callout jumbotron text-center">
+                 <h1 class="jumbotron-header">Climate Change and Effect.</h1>
+                    <hr class="block-divider block-divider--orange">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas officiis laudantium 
+                        suscipit fugit at eaque odit est sunt error cumque quidem, quo aut aperiam aliquam deleniti, molestias adipisci hic numquam!
+                    </p>
+                    <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Read more</button>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus, laborum voluptate 
+                        inventore velit in blanditiis autem a necessitatibus sit sint iure adipisci optio ipsa, impedit, iusto officiis laudantium nostrum.
+                    </p>
+            </section>
+
+        </div>
+        
     </div>
+</div>
 
-    <div id="game-over-text" class="overlay-text">
-       GAME OVER
-       <span class="overlay-text-small">Click to Restart</span>
-    </div>
-     <div id="victory-text" class="overlay-text">
-        VICTORY
-        <span class="overlay-text-small">Click to Restart</span>
-   </div>
 
-    <div class="game-container">
-        <div class="game-info-container">
-          <div class="game-info">
-            Time <span id="time-remaining">100</span>
-          </div>
-          <div class="game-info">
-            Flips <span id="flips">0</span>
-          </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="bonny" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/windturbine.png" alt="Image of Windturbine">
-            </div>
-          </div>
-
-            <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg " src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/bikings.png" alt="Image of Biking">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth " src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/recycling.png" alt="Image of Recycling">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/smartcity.png" alt="Image of smart City">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/solarPanel.png" alt="Image of Solar Panel">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/treePlanting.png" alt="Image of Tree Planting">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/urbanFarm.png" alt="Image of Urban Farm">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/verticalCity.png" alt="Image of Vertical City">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/verticalCity.png" alt="Image of Vertical City">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/windturbine.png" alt="Image of Windturbine">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/recycling.png" alt="Image of Recycling">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/smartcity.png" alt="Image of Smart City">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/treePlanting.png" alt="Image of Tree Planting">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/solarPanel.png" alt="Image of Solar Panel">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/urbanFarm.png" alt="Image of Urban Farm">
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-back card-face">
-                <img class="ghg spin ghg-topLeft-carbondioxide" src="assets/images/bcarbondioxide.png" alt="Molecule of Carbondioxide">
-                <img class="ghg spin ghg-topRight-N2O" src="assets/images/bN2O.png" alt="Molecule of Nitrous Oxide">
-                <img class="ghg spin ghg-bottomLeft-cfc" src="assets/images/bcfc.png" alt="Molecule of Chlorofluorocarbon">
-                <img class="ghg spin ghg-bottomRight-methane" src="assets/images/bmethane.png" alt="Molecule of Methane">
-                <img class="ghg spin earth" src="assets/images/bEarth.png" alt="Image of the Earth">
-            </div>
-
-            <div class="card-front card-face">
-                <img class="ghg ghg-topLeft-carbondioxide eden" src="assets/images/ffloodz.png" alt="Image of Flood">
-                <img class="ghg ghg-topRight-N2O edenz" src="assets/images/fdesertification.png" alt="Image of Desert">
-                <img class="ghg ghg-bottomLeft-cfc" src="assets/images/femissions.png" alt="Image of Emission">
-                <img class="ghg ghg-bottomRight-methane" src="assets/images/fwildfire.png" alt="Image of Wildfire">
-                <img class="win-match" src="assets/images/bikings.png" alt="Image of Biking">
-            </div>
-        </div>
-            
-       
-    </div>
-
+<section class="quoteSection container-fluid  text-center">
+    <div class="row justify-content-center">
+	    <div class="col-12"></div>
     
+    </div>
+</section>
 
-    
+
+
+ 
+
+
+
+
+
+	<!--Navbar  Modal For PlayGame link -->
+	<div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdrop1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel1">Choose</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	            <span aria-hidden="true">&times;</span>
+	            </button>
+				</div>
+				<div class="modal-body">
+					<div class=" dropdown-item hvr-glow"  data-toggle="collapse" role="link"
+						data-target="#collapseEnglishMj" aria-expanded="false" aria-controls="collapseEnglishMj">
+						Game Instruction
+					</div>
+					<div class="collapse" id="collapseEnglishMj">
+						<div class="card card-body">
+							<p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquam ut obcaecati, laboriosam commodi consectetur consequuntur cupiditate. Modi dolores, iste, minima nostrum omnis illo sunt veritatis vel accusamus quisquam veniam?
+							</p>
+                        </div>
+					</div>
+					<a class="dropdown-item hvr-glow" href="cardGameEnglish.html">Play</a>					
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+     </div>
+
+
+
+
+
+
+
+    <!--Script tags-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!--My Script-->
+        <script src="assets/js/script.js"></script>
+        <!--Code for API in this folder Google maps API script-->
+
 </body>
 </html>

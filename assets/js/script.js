@@ -183,5 +183,22 @@ function ready() {
  }); 
 }
 
+/* 
+window.addEventListener("play", function(evt)
+{
+    if(window.$_currentlyPlaying)
+    {
+        window.$_currentlyPlaying.pause();
+    } 
+    window.$_currentlyPlaying = evt.target;
+}, true);
+ */
 
-
+ var previuosAudio;
+document.addEventListener('play', function(e){
+    if(previousAudio && previousAudio != e.target){
+        previousAudio.pause();
+    }
+    previousAudio = e.target;
+    console.log(play);
+}, true);
