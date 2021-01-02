@@ -10,7 +10,8 @@ body, html {
 }
 
 .welcome-page{
-    height: 75vh;
+   
+    height: 100vh;
 
     background: url('../images/welcm.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -31,7 +32,7 @@ body, html {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -106,6 +107,9 @@ body, html {
   
 }
 
+.navbar-toggler-icon{
+    border: 0;
+}
 
 .btn--red {
     width: 150px;
@@ -117,16 +121,156 @@ body, html {
 }
  
 
- .quoteSection {
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
 
+}
+
+
+.jumbotron {
+    background-color: transparent;
+}
+
+
+.jumbotron .lead {
+    color: #a7a7a7;
+    margin: 25px 0;
+}
+
+
+
+
+ /* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+ .block-divider--orange {
+    background-color: #f05f40;
+}
+
+
+/*
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
+    width: 35px;
+} */
+
+
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: #f05f40;
+    border-color: #f05f40;
+}
+
+ .btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
+} 
+
+.page-headers{
+    margin: 75px auto;
+
+}
+
+
+ .quoteSection {
+     margin-top: 75px;
     background: url('../images/welcm2.jpg') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     
-    
-
  }
 
+ /*--------------------------------------------------footer-section---*/
+
+footer {
+    background-color:#5a172a;
+    color: #777777;
+    min-height: 120px;
+    margin-top: 30px;
+}
+footer .our-strenght {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+}
+
+/*--------------------footer-socialMedia---*/
+
+.social-media {
+    padding-bottom: 15px;
+    text-align:center;
+}
+
+div ul.social-media li a {
+    text-align: center;
+}
+                                
+div ul.social-media li a i {
+    width: 2.0em;
+    height: 2.0em;
+    margin: 3%;
+    padding: 5%;
+    border-radius: 25%;
+    font-size: 2.0em;
+    line-height: 2.0em;
+    text-align: center;
+    color: #fafafa;
+    background: rgba(0,73,83,0.9);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-media li a i:hover {
+    background: rgba(255,36,0, 0.8);
+}
+
+
+#footer-contents {
+    padding: 20px;
+}
+
+
+      /*--------------------footer-contacts---*/
+
+footer .contacts {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.footer-header {
+    color: #ffffff;
+    text-align: center;
+    
+}
  
