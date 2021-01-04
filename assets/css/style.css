@@ -194,6 +194,35 @@ body, html {
 }
 
 
+
+.fake-button {
+    text-align: center;
+    background-color: orange;
+
+}
+
+.fakeButton{
+    padding: 10px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+ 
+
+.more {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
  .quoteSection {
      margin-top: 75px;
     background: url('../images/welcm2.jpg') no-repeat center fixed;

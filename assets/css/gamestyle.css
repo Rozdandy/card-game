@@ -245,3 +245,7 @@ position: absolute;
     align-items: center;
   }
 }
+
+.audio{
+    display: none;
+}

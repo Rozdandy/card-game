@@ -11,14 +11,20 @@
     }
 
      startMusic() {
+        this.victorySounds.pause();
+        this.gameOverSounds.pause();
         this.bgSounds.play();
     }
     stopMusic() {
+        this.matchSounds.pause();
         this.bgSounds.pause();
+         this.victorySounds.pause();
+         this.victorySounds.currentTime = 0;
         this.bgSounds.currentTime = 0;
     }
     flip() {
         this.flipSounds.play();
+        this.matchSounds.pause();
     }
     match() {
         this.matchSounds.play();
@@ -31,6 +37,8 @@
         this.stopMusic();
         this.gameOverSounds.play();
     }
+    
+    
 }
 
 
@@ -172,7 +180,7 @@ function ready() {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             game.startGame();
-          let audioController = new AudioController();
+      //   let audioController = new AudioController();
           audioController.startMusic();
         });
     });
@@ -194,7 +202,7 @@ window.addEventListener("play", function(evt)
 }, true);
  */
 
- var previuosAudio;
+/*  var previuosAudio;
 document.addEventListener('play', function(e){
     if(previousAudio && previousAudio != e.target){
         previousAudio.pause();
@@ -202,3 +210,6 @@ document.addEventListener('play', function(e){
     previousAudio = e.target;
     console.log(play);
 }, true);
+ */
+
+ 
