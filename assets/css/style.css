@@ -192,6 +192,16 @@ body, html {
 } */
 
 
+.ccTerms {
+    height: 300px;
+    width: 600px;
+    background-color: red;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 10px;
+
+}
+
 
 .btn--cta {
     font-weight: bold;
