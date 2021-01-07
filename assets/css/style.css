@@ -140,6 +140,32 @@ body, html {
 }
 
 
+ /* READ MORE MAINPAGE */
+
+.expandMoreContent{
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    position: relative;
+}
+
+
+.expandMoreContent.expand-active{
+    height: auto;
+    transition: height 0.5s ease-in-out;
+
+
+}
+
+.btn-expand-more{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: red;
+    font-size: 30px;
+}
+
+
+
 
 
  /* Block dividers */

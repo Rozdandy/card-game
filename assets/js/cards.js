@@ -1,4 +1,45 @@
-var a;
+
+/* document.addEventListener("DOMContentLoaded", () => {
+    const expandsMore = document.querySelectorAll("[expand-more]");
+
+    function expand() {
+        const showContent = document.getElementById(this.dataset.target);
+        if (showContent.classList.contains("expand-active")) {
+            this.innerHTML = this.dataset.showtext;
+        } else {
+            this.innerHTML = this.dataset.hidetext;
+        }
+        showContent.classList.toggle("expand-active");
+    }
+   
+
+    expandsMore.forEach((expandsMore) => {
+        expandsMore.addEventListener("click", expand);
+    });
+}) */
+
+
+
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("showMoreContent1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+/* var a;
 function show_hide() {
     if(a==1)
     {
@@ -10,7 +51,7 @@ function show_hide() {
     }
 
 }
-
+ */
 
 /* $(document).ready(function)() {
     $(".readNow").click(function(){
@@ -25,9 +66,12 @@ function show_hide() {
     });
 }; */
 
-$(document).ready(function(){
+
+
+
+/* $(document).ready(function(){
 $(".readNow").click(function(){
-       
+        
         $(this).siblings(".dots").toggle();
         if($(this).text()=="read more"){
             $(this).text("read less");
@@ -37,4 +81,4 @@ $(".readNow").click(function(){
         }
 
     });
-})
+}); */
