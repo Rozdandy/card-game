@@ -41,8 +41,9 @@ body, html {
 .navbar-dark {
     padding: 0px;
     border: 0;
-    background-color:#5a172a!important;
+    background-color:rgba(90, 150, 210, 0.8)!important;
 }
+
 
 
 
@@ -85,7 +86,7 @@ body, html {
 .nav-item a {
     width: 100%;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 10px;
     color: #ffffff;
 }
 
@@ -100,7 +101,7 @@ body, html {
     width: 100%;                               
     padding-top: 5px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
     padding-bottom: 15px;
@@ -164,6 +165,11 @@ body, html {
     font-size: 30px;
 }
 
+.navbar-dark .navbar-text {
+    color: rgba(255,255,255,.55);
+    display: inline;
+}
+
 
 
 
@@ -211,8 +217,8 @@ body, html {
 
 .btn--red {
     color: white;
-    background-color: #f05f40;
-    border-color: #f05f40;
+    background-color: black;
+    border-color: black;
 }
 
  .btn--red:hover,
