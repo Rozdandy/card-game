@@ -26,14 +26,14 @@ body, html {
     position: relative;
 }
 
-.opaque-overlay {
+/* .opaque-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+    background-color: rgba(0, 0, 0, 0.8);
+} */
 
 
 
@@ -41,7 +41,7 @@ body, html {
 .navbar-dark {
     padding: 0px;
     border: 0;
-    background-color:rgba(90, 150, 210, 0.8)!important;
+    background-color:rgba(90, 150, 210, 0.95)!important;
 }
 
 
@@ -124,21 +124,62 @@ body, html {
 
 .jumbotron h1 {
     color: white;
+    text-transform: capitalize;
     font-weight: bold;
     margin-bottom: 30px;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Langar", sans-serif;
+
 
 }
 
 
 .jumbotron {
-    background-color: transparent;
+    background-color: rgb(26, 24, 21);
+    max-width: 75%;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50px 50px 30px 30px;
+    margin-bottom: 50px;
 }
 
 
 .jumbotron .lead {
-    color: #a7a7a7;
-    margin: 25px 0;
+    color: whitesmoke;
+    line-height: 30px;
+    margin: 20px 0;
+    padding: 0 30px 30px;
+    transition: height 0.5s ease-in-out;
 }
+
+.insideReadMore {
+
+    color: whitesmoke;
+    line-height: 30px;
+    margin: 20px 0;
+    padding: 0 30px 30px;
+    transition: height 0.5s ease-in-out;
+    
+}
+
+
+.jumbotron .sub-lead{
+
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 0;
+    padding: 0 30px 30px;
+    line-height: 1.88em;
+    font-weight: 400;
+    
+    color: white;
+    font-style: normal;
+    
+}
+
+
 
 
  /* READ MORE MAINPAGE */
@@ -158,18 +199,26 @@ body, html {
 
 }
 
-.btn-expand-more{
+
+
+/* .btn-expand-more{
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: red;
     font-size: 30px;
+} */
+
+
+
+/* #you {
+    display:flex;
 }
 
-.navbar-dark .navbar-text {
-    color: rgba(255,255,255,.55);
+.navbar-dark .navbar-text i{
+    color: black;
     display: inline;
-}
-
+    margin-right: 50px;;
+} */
 
 
 
@@ -178,13 +227,15 @@ body, html {
 
 .block-divider {
     width: 75px;
-    height: 5px;
+    height: 15px;
     border: 0;
-    background-color: #444;
+   
 }
 
  .block-divider--orange {
-    background-color: #f05f40;
+    background-color: red;
+  margin: 0 auto;
+   height: 25px;
 }
 
 
@@ -201,11 +252,26 @@ body, html {
 .ccTerms {
     height: 300px;
     width: 600px;
-    background-color: red;
+    background-color: goldenrod;
+    font: white;
     overflow: hidden;
     overflow-y: scroll;
     padding: 10px;
+    transform: height 0.5s ease-in-out;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    margin-left: 50px;
 
+
+}
+.ccTerms-Links{
+     list-style-type: none;
+} 
+
+ul.ccTerms-typo{
+    font: white;
+    padding: 5px;
 }
 
 
@@ -217,9 +283,10 @@ body, html {
 
 .btn--red {
     color: white;
-    background-color: black;
-    border-color: black;
+    background-color:#5a172a; 
+    border-color:#5a172a;
 }
+
 
  .btn--red:hover,
 .btn--red:active,
@@ -229,6 +296,25 @@ body, html {
     border-color: #df4929;
     color: white;
 } 
+
+.expandToggle{
+    margin-bottom: 30px;
+}
+
+
+
+.btn--red.climateButton{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    align-content: center;
+    border-radius: 15%;
+    margin-left: 170px;
+    text-transform: capitalize;
+    font: white;
+    
+}
+
 
 .page-headers{
     margin: 75px auto;
@@ -256,7 +342,9 @@ body, html {
 
 
 
-
+#showMoreContent1{
+    display: none;
+}
 
 
 
