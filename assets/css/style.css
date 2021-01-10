@@ -165,60 +165,11 @@ body, html {
 }
 
 
-.jumbotron .sub-lead{
-
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: 0;
-    padding: 0 30px 30px;
-    line-height: 1.88em;
-    font-weight: 400;
-    
-    color: white;
-    font-style: normal;
-    
-}
-
-
 
 
  /* READ MORE MAINPAGE */
 
-.expandMoreContent{
-    height: 100px;
-    overflow: hidden;
-    transition: height 0.5s ease-in-out;
-    position: relative;
-}
 
-
-.expandMoreContent.expand-active{
-    height: auto;
-    transition: height 0.5s ease-in-out;
-
-
-}
-
-
-
-/* .btn-expand-more{
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: red;
-    font-size: 30px;
-} */
-
-
-
-/* #you {
-    display:flex;
-}
-
-.navbar-dark .navbar-text i{
-    color: black;
-    display: inline;
-    margin-right: 50px;;
-} */
 
 
 
@@ -232,12 +183,17 @@ body, html {
    
 }
 
- .block-divider--orange {
+ /* .block-divider--orange {
     background-color: red;
   margin: 0 auto;
    height: 25px;
 }
-
+ */
+hr {
+    background-color: red;
+    margin: 0 auto;
+   height: 25px;
+}
 
 /*
 .block-divider--white {
@@ -283,8 +239,8 @@ ul.ccTerms-typo{
 
 .btn--red {
     color: white;
-    background-color:#5a172a; 
-    border-color:#5a172a;
+    background-color:rgba(0,73,83,0.9);
+    border-color:rgba(0,73,83,0.9);
 }
 
 
@@ -304,11 +260,11 @@ ul.ccTerms-typo{
 
 
 .btn--red.climateButton{
-    width: 350px;
+    width: 300px;
     height: 50px;
     padding: 10px;
     align-content: center;
-    border-radius: 50px 50px 30px 30px;
+    border-radius:12px;
     margin-left: 170px;
     text-transform: capitalize;
     font: white;
@@ -322,23 +278,6 @@ ul.ccTerms-typo{
 }
 
 
-
-.fake-button {
-    text-align: center;
-    background-color: orange;
-
-}
-
-.fakeButton{
-    padding: 10px;
-    font-weight: bold;
-    background-color: aliceblue;
-}
- 
-
-.more {
-    display: none;
-}
 
 
 
@@ -383,7 +322,7 @@ ul.ccTerms-typo{
     opacity:0.4;
 }
 
-.newpage-header #gallery {
+.newpage-header #quotes {
 
     margin-bottom: 20px;
     margin-top: 20px;
@@ -391,55 +330,18 @@ ul.ccTerms-typo{
      padding-bottom: 10px;
      letter-spacing: 2px;
      text-align: center;
+     font-family: "Langar", sans-serif;
 }
 
 
-
-/* .carousel-quote{
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-
-}
-
-.quotes{
-    position: absolute;
-    color: rgb(117, 75, 70);
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-}
- */
-
-
-
-/* 
- .quoteSection {
-     margin-top: 75px;
-    background: url('../images/welcm2.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
- } */
 
  /*--------------------------------------------------footer-section---*/
 
 footer {
-    background-color:#5a172a;
+    background-color:rgba(90, 150, 210, 0.95);
     color: #777777;
     min-height: 120px;
     margin-top: 30px;
-}
-footer .our-strenght {
-    list-style: none;
-    text-decoration: none;
-    font-size: 18px;
-    color: #fafafa;
-    text-align: center;
-    padding-left: 5px;
 }
 
 /*--------------------footer-socialMedia---*/
@@ -459,8 +361,8 @@ div ul.social-media li a i {
     margin: 3%;
     padding: 5%;
     border-radius: 25%;
-    font-size: 2.0em;
-    line-height: 2.0em;
+    font-size: 1.8em;
+    line-height: 1.8em;
     text-align: center;
     color: #fafafa;
     background: rgba(0,73,83,0.9);
@@ -476,7 +378,7 @@ div ul.social-media li a i {
 
 
 #footer-contents {
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -492,6 +394,14 @@ footer .contacts {
 .footer-header {
     color: #ffffff;
     text-align: center;
+    
+}
+
+footer .contactslg {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
     
 }
  
