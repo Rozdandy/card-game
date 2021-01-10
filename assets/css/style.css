@@ -308,7 +308,7 @@ ul.ccTerms-typo{
     height: 50px;
     padding: 10px;
     align-content: center;
-    border-radius: 15%;
+    border-radius: 50px 50px 30px 30px;
     margin-left: 170px;
     text-transform: capitalize;
     font: white;
@@ -347,12 +347,74 @@ ul.ccTerms-typo{
 }
 
 
+.sectional-container{
+    margin-top: 75px;
+}
+
+#carolzDiv{
+    position: relative;
+    
+   max-height: 600px;
+   overflow: hidden;
+   justify-content: center;
+
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 30%;
+    padding: 50px 50px;
+    border-radius: 15px 50px 30px;
+}
+
+.carousel-caption p {
+      font-size: 20px;
+}
+
+.drk:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#000;
+    opacity:0.4;
+}
+
+.newpage-header #gallery {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+     padding-bottom: 10px;
+     letter-spacing: 2px;
+     text-align: center;
+}
 
 
 
+/* .carousel-quote{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.quotes{
+    position: absolute;
+    color: rgb(117, 75, 70);
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+ */
 
 
 
+/* 
  .quoteSection {
      margin-top: 75px;
     background: url('../images/welcm2.jpg') no-repeat center fixed;
@@ -361,7 +423,7 @@ ul.ccTerms-typo{
     -o-background-size: cover;
     background-size: cover;
     
- }
+ } */
 
  /*--------------------------------------------------footer-section---*/
 
